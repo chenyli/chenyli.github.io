@@ -404,7 +404,12 @@ var time=0;
 		if(!pic_format) {
 			pic_format = 'png';
 		}
-		canvas.width = 510;
+		if(name_zh.length > 2){
+            canvas.width = 510;
+		}else{
+            canvas.width = 400;
+		}
+
 		canvas.height = 600;
 		var back_img = new Image();
 		back_img.src = './img/award_' + 0 + '.' + pic_format;
