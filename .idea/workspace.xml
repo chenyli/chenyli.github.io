@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="a4f8c3b6-f213-4bb3-8cb4-b3d2ff677941" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/images/bg_sign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/signIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sign.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sign.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="63" column="32" lean-forward="true" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+            <state relative-caret-position="199">
+              <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -54,13 +52,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pc_draw.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/lottery_data.js" />
         <option value="$PROJECT_DIR$/luckydraw.html" />
         <option value="$PROJECT_DIR$/wishingWell.html" />
         <option value="$PROJECT_DIR$/wishWall.html" />
         <option value="$PROJECT_DIR$/signIn.html" />
         <option value="$PROJECT_DIR$/sign.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -73,7 +71,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="181" />
     <option name="y" value="90" />
     <option name="width" value="1698" />
@@ -143,12 +141,12 @@
       <workItem from="1548313176549" duration="1035000" />
       <workItem from="1548314437120" duration="5649000" />
       <workItem from="1548387114002" duration="6926000" />
-      <workItem from="1548400193508" duration="1081000" />
+      <workItem from="1548400193508" duration="1286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14691000" />
+    <option name="totallyTimeSpent" value="14896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="181" y="90" width="1698" height="865" extended-state="0" />
@@ -161,7 +159,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292011" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3292011" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -274,13 +272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/wishWall.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -328,8 +319,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sign.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="63" column="32" lean-forward="true" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+        <state relative-caret-position="285">
+          <caret line="61" column="9" lean-forward="true" selection-end-line="85" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
         </state>
       </provider>
     </entry>
