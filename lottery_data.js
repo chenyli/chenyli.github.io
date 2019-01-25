@@ -1,3 +1,4 @@
+// 所有人员
 var lottery_initial_datas = [
     {
         "nameen": "xiaopenglei",
@@ -266,6 +267,15 @@ var lottery_initial_datas = [
 
 ];
 
+// 已到人员
+var lottery_registered = [
+    {
+        "nameen": "songwentian",
+        "namezh": "宋文天",
+        "wish":["愿望1","愿望2"]
+    },
+];
+
 var award_config = {
     "award01": 1,
     "award02": 3,
@@ -274,6 +284,13 @@ var award_config = {
 };
 
 // 初始化数据
+
+//初始化人员
+if (!localStorage.getItem('lottery_registered')) {
+    var data_str = JSON.stringify(lottery_registered);
+    localStorage.setItem('lottery_registered', data_str);
+}
+
 //初始化抽奖号
 if (!localStorage.getItem('lottery_initial')) {
     var data_str = JSON.stringify(lottery_initial_datas);

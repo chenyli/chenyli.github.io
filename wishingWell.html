@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新年愿望</title>
+    <script src="lottery_data.js"></script>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        body .bg{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        .form_div{
+            height: 43%;
+            position: absolute;
+            right: 1%;
+            bottom: 8%;
+            width: 70%;
+
+        }
+        .userName{
+            font-size: 46px;
+            text-align: center;
+            color: #f7c766;
+            line-height: 88px;
+            background: #fff;
+            width: 50%;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+        }
+        .form_div .text-title{
+            background-color: #F7C766;
+            line-height: 90px;
+            width: 90%;
+            padding: 0 14px;
+            font-size: 38px;
+            color: #e83a18;
+        }
+        .text-content{
+            height: calc(100% - 238px);
+            background: #fff;
+            width: 90%;
+            padding: 0 14px;
+            margin-top: 50px;
+            position: relative;
+            border: 12px dashed #000;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-content_img{
+            position: absolute;
+            left: -20%;
+            bottom: -18%;
+            width: 340px;
+            height: 340px;
+        }
+        .text-content p{
+            flex: 1;
+            font-size: 50px;
+            color: #e83a18;
+        }
+        .text-content p input{
+            border:0;
+            border-bottom: 2px solid #000;
+            font-size: 34px;
+            width: 80%;
+        }
+        .text-content p:nth-child(1) input.ml{
+            margin-left: calc(8% - 4px);
+        }
+
+        .text-content p:nth-child(2) input.ml{
+            margin-left: 11%;
+        }
+        .text-content p:nth-child(2){
+            width: 64%;
+            margin-left: 36%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="bg">
+    <img src="./images/wish_bg.png" alt="许愿">
+    <div class="form_div">
+        <h4 class="userName">Hi,苗腾飞</h4>
+        <p class="text-title">偷偷告诉猪猪，你的两个新年愿望吧</p>
+        <div class="text-content">
+            <p>#&nbsp;<input type="text" placeholder="第一个愿望...">
+                <input type="text" class="ml">
+                <input type="text" class="ml">
+            </p>
+            <p>#&nbsp;<input type="text" placeholder="第二个愿望...">
+                <input type="text" class="ml">
+                <input type="text" class="ml">
+            </p>
+            <img src="./images/gift_box.png" alt="礼物" class="text-content_img">
+        </div>
+    </div>
+</div>
+<script>
+    var lottery_registered = localStorage.getItem('lottery_registered');
+
+</script>
+</body>
+</html>
