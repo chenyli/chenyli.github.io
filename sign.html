@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国信华源年会签到</title>
+    <style>
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        body .bg{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        .signImg{
+            width: 214px;
+            height: 215px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10%;
+        }
+        .username{
+            position: absolute;
+            transform: translate(-50%);
+            top: 60%;
+            left: 50%;
+            width: 80%;
+            height: 150px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 10px;
+            cursor: pointer;
+            font-size: 60px;
+            font-family: 'STKaiti', 'KaiTi ';
+            color: #DA0010;
+            border: 3px solid #f6dc77;
+            border-radius: 6px;
+            background-color: #f6dc77;
+            -webkit-box-shadow: 3px 12px rgba(246, 220, 119, 0.5);
+            -moz-box-shadow: 3px 12px rgba(246, 220, 119, 0.5);
+            box-shadow: 3px 12px rgba(246, 220, 119, 0.5);
+        }
+
+        input::-webkit-input-placeholder {
+            color: #DA0010;
+        }
+
+        input:-moz-placeholder {
+            color: #DA0010;
+        }
+
+        input::-moz-placeholder {
+            color: #DA0010;
+        }
+
+        input:-ms-input-placeholder {
+            color: #DA0010;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <img src="./images/bg_sign.png" alt="国信华源年会签到">
+        <input type="text" placeholder="请输入您的姓名" class="username">
+        <img src="./images/sign.png" alt="签到" class="signImg">
+    </div>
+</body>
+</html>
