@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>国信华源年会签到入场人员</title>
+    <title>国信华源年会签到</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <style>
@@ -106,11 +106,20 @@
             left: 2%;
             top: 50%;
             transform: translateY(-50%);
-            width: 200px;
-            height: 100px;
+            width: 388px;
+            height: 143px;
             z-index: 999999;
-            background: #fff;
             text-align: center;
+            color: #FD0000;
+            font-size: 60px;
+            background: url("./images/sing.png") no-repeat;
+        }
+        .singIn span{
+            display: block;
+            line-height: 54px;
+        }
+        .singIn span:nth-child(2){
+            margin-top: 30px;
         }
     </style>
     <link rel="stylesheet" href="css/animate.css">
@@ -126,8 +135,8 @@
 <div id="container"></div>
 
 <div class="singIn">
-    <p>已签到<span>50</span>人</p>
-    <p>未签到<span>10</span>人</p>
+    <span class="singIn_yq">50</span>
+    <span class="singIn_wq">10</span>
 </div>
 <!--
 <div id="menu">
