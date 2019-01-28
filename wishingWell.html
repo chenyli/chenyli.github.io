@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>新年许愿树</title>
-    <script src="lottery_data.js"></script>
+
     <style>
         html,body{
             height: 100%;
@@ -116,6 +116,7 @@
             z-index: 99;
         }
     </style>
+
 </head>
 <body>
 
@@ -140,6 +141,7 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/jQuery.Hz2Py-min.js"></script>
+<script src="lottery_data.js"></script>
 <script>
     var lottery_registered = JSON.parse(localStorage.getItem('lottery_registered'));
     var nameReg = /^[\u4E00-\u9FA5]{2,4}$/;
