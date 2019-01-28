@@ -262,16 +262,11 @@ var lottery_initial_datas = [
         "nameen": "songwentian",
         "namezh": "宋文天"
     },
-
 ];
 
 // 已到人员
 var lottery_registered = [
-    {
-        "nameen": "songwentian",
-        "namezh": "宋文天",
-        "wish":["愿望1","愿望2"]
-    },
+
 ];
 
 var award_config = {

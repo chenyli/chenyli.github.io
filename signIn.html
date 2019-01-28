@@ -135,19 +135,13 @@
 <div id="container"></div>
 
 <div class="singIn">
-    <span class="singIn_yq">50</span>
-    <span class="singIn_wq">10</span>
+    <span class="singIn_yq"></span>
+    <span class="singIn_wq"></span>
 </div>
-<!--
-<div id="menu">
-    <button id="table">表格</button>
-    <button id="sphere">球球</button>
-    <button id="helix">螺旋</button>
-    <button id="grid">格子</button>
-</div>
--->
-<!--localStorage.getItem('lottery_registered')-->
+
 <script>
+    //全体人数
+    var  lottery_initial= JSON.parse(window.localStorage.getItem('lottery_initial'));
     var personArray = new Array;
     var CurPersonNum = 0;
     // animate
@@ -156,7 +150,6 @@
 
     // 模拟推送数据
     var s = setInterval(function(){
-        // get animate
         var rand_in = parseInt(Math.random() * _in.length,10);
         var rand_out = parseInt(Math.random() * _out.length,10);
         if(CurPersonNum >= personArray.length){
@@ -164,26 +157,28 @@
         }
     },4500);
 
-    // 如果得不到数据，则从初始化数据中获取
-    var  lottery_storage= window.localStorage.getItem('lottery_initial');
-    lottery_storage = JSON.parse(lottery_storage);
+    // 已签到人数
+    var  lottery_registered= JSON.parse(window.localStorage.getItem('lottery_registered'));
     // 生成虚拟数据
-    for(var i=0;i<lottery_storage.length;i++){
+    for(var i=0;i<lottery_registered.length;i++){
         personArray.push({
-            image: "./img/avatar/" + lottery_storage[i].nameen + '.jpg'
+            image: "./img/avatar/" + lottery_registered[i].nameen + '.jpg'
         });
     }
-
+    console.log(personArray);
     var table = new Array;
     for (var i = 0; i < personArray.length; i++) {
         table[i] = new Object();
         if (i < personArray.length) {
             table[i] = personArray[i];
-            table[i].src = personArray[i].thumb_image;
+            table[i].src = personArray[i].image;
         }
         table[i].p_x = i % 20 + 1;
         table[i].p_y = Math.floor(i / 20) + 1;
     }
+    $(".singIn_yq").text(lottery_registered.length);
+    $(".singIn_wq").text(lottery_initial.length - lottery_registered.length);
+
 
 
     var camera, scene, renderer;
@@ -256,7 +251,6 @@
         }
 
         // helix
-
         var vector = new THREE.Vector3();
         var cylindrical = new THREE.Cylindrical();
 
@@ -283,21 +277,20 @@
         }
 
         // grid
-
         for ( var i = 0; i < objects.length; i ++ ) {
             var object = new THREE.Object3D();
             object.position.x = ( ( i % 5 ) * 400 ) - 800; // 400 图片的左右间距  800 x轴中心店
             object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 300 ) + 500;  // 500 y轴中心店
             object.position.z = ( Math.floor( i / 25 ) ) * 200 - 800;// 300调整 片间距 800z轴中心店
             targets.grid.push( object );
-
         }
 
         //渲染
         renderer = new THREE.CSS3DRenderer();
         renderer.setSize( window.innerWidth, window.innerHeight );
         renderer.domElement.style.position = 'absolute';
-        document.getElementById( 'container' ).appendChild( renderer.domElement );
+        // document.getElementById( 'container' ).appendChild( renderer.domElement );
+        $("#container").html(renderer.domElement);
 
         // 鼠标控制
         controls = new THREE.TrackballControls( camera, renderer.domElement );
@@ -309,43 +302,17 @@
         // 自动更换
         var ini = 0;
         setInterval(function(){
-            ini = ini >= 3 ? 0 : ini;
+            ini = ini >= 2 ? 0 : ini;
             ++ini;
             switch(ini){
                 case 1:
                     transform( targets.sphere, 1000 );
                     break;
                 case 2:
-                    transform( targets.helix, 1000 );
-                    break;
-                case 3:
                     transform( targets.grid, 1000 );
                     break;
             }
-        },8000);
-
-        // var button = document.getElementById( 'table' );
-        // button.addEventListener( 'click', function ( event ) {
-        //     transform( targets.table, 1000 );
-        // }, false );
-        //
-        // var button = document.getElementById( 'sphere' );
-        // button.addEventListener( 'click', function ( event ) {
-        //     transform( targets.sphere, 2000 );
-        // }, false );
-        //
-        // var button = document.getElementById( 'helix' );
-        // button.addEventListener( 'click', function ( event ) {
-        //     transform( targets.helix, 2000 );
-        // }, false );
-        //
-        // var button = document.getElementById( 'grid' );
-        // button.addEventListener( 'click', function ( event ) {
-        //     transform( targets.grid, 2000 );
-        // }, false );
-        //
-        // transform( targets.table, 2000 );
-
+        },5000);
         window.addEventListener( 'resize', onWindowResize, false );
 
     }
@@ -407,10 +374,45 @@
     }
 
     function render() {
-
         renderer.render( scene, camera );
-
     }
+
+   var lunbo =  setInterval(function(){
+       // 已签到人数
+       var  lottery_registered= JSON.parse(window.localStorage.getItem('lottery_registered'));
+       personArray = [];
+       // 生成虚拟数据
+       for(var i=0;i<lottery_registered.length;i++){
+           personArray.push({
+               image: "./img/avatar/" + lottery_registered[i].nameen + '.jpg'
+           });
+       }
+       for (var i = 0; i < personArray.length; i++) {
+           table[i] = new Object();
+           if (i < personArray.length) {
+               table[i] = personArray[i];
+               table[i].src = personArray[i].image;
+           }
+           table[i].p_x = i % 20 + 1;
+           table[i].p_y = Math.floor(i / 20) + 1;
+       }
+       init();
+
+       if(lottery_initial.length == lottery_registered.length){
+           clearInterval(lunbo);
+       }
+    },10000);
+
+
+   var numSum = setInterval(function(){
+        // 已签到人数
+        var  lottery_registered= JSON.parse(window.localStorage.getItem('lottery_registered'));
+        $(".singIn_yq").text(lottery_registered.length);
+        $(".singIn_wq").text(lottery_initial.length - lottery_registered.length);
+        if(lottery_initial.length - lottery_registered.length == 0){
+            clearInterval(numSum);
+        }
+    },1000);
 
 </script>
 </body>

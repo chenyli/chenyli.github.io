@@ -109,3 +109,22 @@ body .bg{
     height: 368px;
     color: #a57340;
 }
+.wishIn{
+    position: absolute;
+    right: -1%;
+    bottom: 8%;
+    width: 388px;
+    height: 143px;
+    z-index: 999999;
+    text-align: center;
+    color: #FD0000;
+    font-size: 60px;
+    background: url(../images/wish.png) no-repeat;
+}
+.wishIn span{
+    display: block;
+    line-height: 54px;
+}
+.wishIn span:nth-child(2){
+    margin-top: 30px;
+}

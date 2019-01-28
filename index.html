@@ -82,5 +82,27 @@
     <input type="text" placeholder="请输入您的姓名" class="username">
     <img src="./images/sign.png" alt="签到" class="signImg">
 </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jQuery.Hz2Py-min.js"></script>
+<script>
+    var lottery_registered = JSON.parse(localStorage.getItem('lottery_registered'));
+    var nameReg = /^[\u4E00-\u9FA5]{2,4}$/;
+    $(".signImg").click(function () {
+       var name = $(".username").val();
+        if (name!=null && name!="" && nameReg.test(name)) {
+            var objStr = {
+                "nameen": pinyin.getFullChars(name).toLowerCase(),
+                "namezh": name.trim()
+            }
+            lottery_registered.push(objStr);
+            var data_str = JSON.stringify(lottery_registered);
+            localStorage.setItem('lottery_registered', data_str);
+            alert("恭喜你，签到成功！");
+        }else{
+            alert("请输入正确的姓名！");
+        }
+    });
+</script>
 </body>
 </html>

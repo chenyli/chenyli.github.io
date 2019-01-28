@@ -51,7 +51,7 @@
         .form_div .text-title{
             background-color: #F7C766;
             line-height: 90px;
-            width: 90%;
+            width: max-content;
             padding: 0 14px;
             font-size: 38px;
             color: #e83a18;
@@ -101,30 +101,86 @@
             width: 64%;
             margin-left: 36%;
         }
-
+        #btn_submit{
+            position: absolute;
+            right: 2%;
+            width: 154px;
+            height: 74px;
+            margin-top: 10px;
+            background: #f7c766;
+            color: red;
+            font-size: 38px;
+            border: 1px solid #FFC107;
+            border-radius: 6px;
+            letter-spacing: 4px;
+            z-index: 99;
+        }
     </style>
 </head>
 <body>
+
 <div class="bg">
     <img src="./images/wish_bg.png" alt="许愿">
     <div class="form_div">
-        <h4 class="userName">Hi,苗腾飞</h4>
+        <h4 class="userName"></h4>
         <p class="text-title">偷偷告诉猪猪，你的两个新年愿望吧</p>
         <div class="text-content">
-            <p>#&nbsp;<input type="text" placeholder="第一个愿望...">
+            <p>#&nbsp;<input type="text" placeholder="第一个愿望..." class="yuanwang1">
                 <input type="text" class="ml">
                 <input type="text" class="ml">
             </p>
-            <p>#&nbsp;<input type="text" placeholder="第二个愿望...">
+            <p>#&nbsp;<input type="text" placeholder="第二个愿望..." class="yuanwang2">
                 <input type="text" class="ml">
                 <input type="text" class="ml">
             </p>
             <img src="./images/gift_box.png" alt="礼物" class="text-content_img">
         </div>
+        <button type="button" id="btn_submit">确定</button>
     </div>
 </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jQuery.Hz2Py-min.js"></script>
 <script>
-    var lottery_registered = localStorage.getItem('lottery_registered');
+    var lottery_registered = JSON.parse(localStorage.getItem('lottery_registered'));
+    var nameReg = /^[\u4E00-\u9FA5]{2,4}$/;
+    var userName = "";
+    var flag = 0;
+    function disp_prompt(val)
+    {
+        var name=prompt(val);
+        if (name!=null && name!="" && nameReg.test(name))
+        {
+            userName = pinyin.getFullChars(name).toLowerCase();
+            $.each(lottery_registered,function (i,v) {
+                if(v.nameen == userName){
+                    flag = true;
+                }
+            });
+            if(!flag){
+                disp_prompt("请确认与签到名字是否一致，并重新输入");
+            }
+            $('.userName').text("Hi，" + name);
+        }
+    }
+    disp_prompt("请输入您的名字");
+
+
+    $("#btn_submit").click(function () {
+        var yuanwang1 = $(".yuanwang1").val();
+        var yuanwang2 = $(".yuanwang2").val();
+        if(yuanwang1 && yuanwang2){
+            $.each(lottery_registered,function (i,val) {
+                if(val.nameen == userName){
+                    val.wish = [yuanwang1,yuanwang2];
+                }
+            });
+            var data_str = JSON.stringify(lottery_registered);
+            localStorage.setItem('lottery_registered', data_str);
+            alert("许愿成功！");
+        }else{
+            alert("必须填写两个愿望！");
+        }
+    });
 
 </script>
 </body>
