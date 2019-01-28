@@ -18,13 +18,14 @@
 
         </ul>
     </div>
-
+    <img src="./images/bnt.png" alt="愿望福" class="bnt" onclick="wishIng()">
     <div class="wishIn">
-        <span class="wishIn_y"></span>
-        <span class="wishIn_w"></span>
+        <span class="wishIn_y">0</span>
+        <span class="wishIn_w">0</span>
     </div>
 
     <script src="lottery_data.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script>
         // 已签到人数
         var  lottery_registered = JSON.parse(window.localStorage.getItem('lottery_registered'));
