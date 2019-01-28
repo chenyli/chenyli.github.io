@@ -176,7 +176,7 @@ var lottery_initial_datas = [
         "namezh": "严嘉"
     },
     {
-        "nameen": "yangkyuijiang",
+        "nameen": "yangkuijiang",
         "namezh": "杨魁江"
     },
     {
@@ -216,7 +216,7 @@ var lottery_initial_datas = [
         "namezh": "陈堃"
     },
     {
-        "nameen": "sunwenliang",
+        "nameen": "suwenliang",
         "namezh": "苏文亮"
     },
     {
