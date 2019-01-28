@@ -4,8 +4,6 @@ var lottery_initial_datas = [
         "nameen": "xiaopenglei",
         "namezh": "肖鹏磊"
     },
-
-
     {
         "nameen": "cuilesi",
         "namezh": "崔乐思"
@@ -278,9 +276,9 @@ var lottery_registered = [
 
 var award_config = {
     "award01": 1,
-    "award02": 3,
-    "award03": 6,
-    "award04": 100//抽奖次数
+    "award02": 2,
+    "award03": 3,
+    "award04": 500//抽奖次数
 };
 
 // 初始化数据

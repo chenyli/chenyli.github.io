@@ -198,7 +198,7 @@
 
 	        speed = 70;
 	        $('#lottery-btn').text('可抽奖啦 @_@');
-	//	             当速度达到最终的设置峰值是，isLock 将会解锁，此时，才可以停止动画
+	   //当速度达到最终的设置峰值是，isLock 将会解锁，此时，才可以停止动画
 		    isLock = false;
         }, 5000);
     }
@@ -753,9 +753,9 @@ function frame(){
             music_bool: (music_local == '1'),
             init: function() {
                 if (this.music_bool) {
-//                  this.play();
+                  this.play();
                 } else {
-//                  this.music.pause();
+	                 this.music.pause();
                 }
             },
             play: function() {
@@ -800,9 +800,11 @@ function frame(){
         if (local_handle.get("liwu_toggle") == 1) {
             $('#liwu-con').slideDown();
             $('#liwu').hide();
+            $(".right-btn").fadeIn(2000);
         } else {
             $('#liwu-con').hide();
             $('#liwu').show();
+            $(".right-btn").fadeOut(1000);
         }
 
         $('#mingdan').click(function () {
@@ -819,38 +821,20 @@ function frame(){
             $(this).fadeOut();
             $('#liwu-con').slideDown(1000);
             local_handle.set("liwu_toggle", 1);
+            $(".right-btn").fadeOut(1000);
         });
         $('#liwu-title').click(function() {
             $('#liwu-con').slideUp(1000);
             $('#liwu').show();
             local_handle.set("liwu_toggle", 0);
+            $(".right-btn").fadeIn(2000);
         });
 
-        // 控制：显示/隐藏纪念奖
-        var award_history = local_handle.get('award_history');
-        if (award_history == 4) {
-            $('#award-04').show();
-            $('#award-123').hide();
-        }
-        $('#award04-toggle').click(function() {
-            if ($('#award-04').is(":hidden")) {
-                $('#award-04').show();
-            } else {
-                $('#award-04').hide();
-            }
-
-            if ($('#award-123').is(":hidden")) {
-                $('#award-123').show();
-            } else {
-                $('#award-123').hide();
-            }
-        });
 
         // 控制奖项的选择
         // 1: 一等奖
         // 2: 二等奖
         // 3: 三等奖
-        // 4: 纪念奖
         var select_award = local_handle.get('select_award');
         if (select_award) {
             $('.award').eq(select_award-1).addClass('award-active');
@@ -915,9 +899,7 @@ function frame(){
             if (e.keyCode == 51) {
                 $('#award-3').click();
             }
-            if (e.keyCode == 52) {
-                $('#award-4').click();
-            }
+
             // Enter 按键
             if (e.keyCode == 13) {
                 $('#modal-close').click();
@@ -927,19 +909,17 @@ function frame(){
                 $('#clear-control').click();
             }
         });
-/*	var rooltop=0;
-	var rollheight=$("#roll").height();
-	var rolldivheight=$("#roll-div").height()/2;
-	var rooldinterval= setInterval(function(){
-		rooltop=rooltop-2;
-		if(Math.abs(rooltop)>(rolldivheight-rollheight)){
-			rooltop=0;
-		}
-		$("#roll-div").css("top",rooltop + "px");
-	},30)*/
 
+        $(".btn_game").click(function () {
+			$("#mingdan-title").html('游戏名单');
+        });
+        $(".btn_luckyDraw").click(function () {
+            $("#mingdan-title").html('中奖名单');
+        });
 
 		$(".win-li .name").click(function () {
 			$(this).text($(this).attr("title"));
-		})
+		});
+
+        $(".right-btn").fadeIn(1000);
     });

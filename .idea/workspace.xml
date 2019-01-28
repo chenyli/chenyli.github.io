@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="a4f8c3b6-f213-4bb3-8cb4-b3d2ff677941" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wishingWell.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishingWell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-lottery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-lottery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/chengran.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/chengran.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/chenli.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/chenli.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/limingyuan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/limingyuan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/miaotengfei.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/miaotengfei.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/shuaibinyang.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/shuaibinyang.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/sunweibin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/sunweibin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/xiaopenglei.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/xiaopenglei.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/yangbing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/yangbing.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/zhangshixian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/zhangshixian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/avatar/zhenghuiyan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/avatar/zhenghuiyan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lottery_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/lottery_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luckydraw.html" beforeDir="false" afterPath="$PROJECT_DIR$/luckydraw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_draw.js" beforeDir="false" afterPath="$PROJECT_DIR$/pc_draw.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,26 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wishingWell.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wishingWell.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +45,14 @@
       <find>local_handle</find>
       <find>menu</find>
       <find>table</find>
+      <find>中奖名单</find>
+      <find>cur_lottery</find>
+      <find>select_award</find>
+      <find>localStorage.getItem('lottery_registered')</find>
+      <find>z-index: 100</find>
+      <find>award_log</find>
+      <find>right-btn</find>
+      <find>award</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -59,14 +61,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pc_draw.js" />
-        <option value="$PROJECT_DIR$/lottery_data.js" />
-        <option value="$PROJECT_DIR$/luckydraw.html" />
         <option value="$PROJECT_DIR$/wishWall.html" />
         <option value="$PROJECT_DIR$/signIn.html" />
         <option value="$PROJECT_DIR$/sign.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/wishingWell.html" />
+        <option value="$PROJECT_DIR$/luckydraw.html" />
+        <option value="$PROJECT_DIR$/css/style-lottery.css" />
+        <option value="$PROJECT_DIR$/pc_draw.js" />
+        <option value="$PROJECT_DIR$/lottery_data.js" />
       </list>
     </option>
   </component>
@@ -80,8 +83,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="181" />
-    <option name="y" value="90" />
+    <option name="x" value="142" />
+    <option name="y" value="128" />
     <option name="width" value="1698" />
     <option name="height" value="865" />
   </component>
@@ -98,11 +101,6 @@
             <path>
               <item name="chenyli.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="chenyli.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chenyli.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chenyli.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,16 +147,16 @@
       <workItem from="1548313176549" duration="1035000" />
       <workItem from="1548314437120" duration="5649000" />
       <workItem from="1548387114002" duration="6926000" />
-      <workItem from="1548400193508" duration="2518000" />
+      <workItem from="1548400193508" duration="4419000" />
+      <workItem from="1548643246384" duration="3339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16128000" />
+    <option name="totallyTimeSpent" value="21368000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="181" y="90" width="1698" height="865" extended-state="0" />
-    <editor active="true" />
+    <frame x="142" y="128" width="1698" height="865" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -167,7 +165,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292011" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3287483" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -182,19 +180,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -266,41 +264,10 @@
         <state relative-caret-position="-1364" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pc_draw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="288" column="47" selection-start-line="288" selection-start-column="5" selection-end-line="288" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/wishWall.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/sign.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/luckydraw.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-lottery.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="60" column="2" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -318,10 +285,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sign.html">
+    <entry file="file://$PROJECT_DIR$/sign.html" />
+    <entry file="file://$PROJECT_DIR$/wishingWell.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="61" column="9" lean-forward="true" selection-end-line="85" selection-end-column="7" />
+        <state relative-caret-position="352">
+          <caret line="119" column="46" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -332,10 +300,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wishingWell.html">
+    <entry file="file://$PROJECT_DIR$/css/style-lottery.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+        <state relative-caret-position="511">
+          <caret line="944" column="16" lean-forward="true" selection-start-line="944" selection-start-column="16" selection-end-line="944" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pc_draw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="912" column="35" selection-start-line="912" selection-start-column="35" selection-end-line="912" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lottery_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/luckydraw.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="87" column="56" lean-forward="true" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

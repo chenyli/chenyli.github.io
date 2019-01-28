@@ -28,10 +28,8 @@
                 </div>
             </div>
             <div class="award-con" id="award-04">
-                <!--<h3 class="award-title">纪念奖</h3>-->
                 <ul class="win"></ul>
             </div>
-            <a href="javascript:;" id="award04-toggle" class="more">查看更多</a>
         </div>
     </div>
     <img src="./img/lantern.png" alt="" width="85" id="mingdan" class="switch">
@@ -46,9 +44,6 @@
                     <h3 class="award-title">一等奖</h3>
                     <ul class="win">
                         <li class="clearfix win-li">
-                            <div class="f-l avatar">
-                                <!--<img width="34" src="./img/gift/canon.jpg"/>-->
-                            </div>
                             <div class="f-l name" title="Tiffany 18K笑脸项链">******</div>
                         </li>
                     </ul>
@@ -57,15 +52,10 @@
                     <h3 class="award-title">二等奖</h3>
                     <ul class="win">
                         <li class="clearfix win-li">
-                            <div class="f-l avatar">
-                                <!--<img width="34" src="./img/gift/canon.jpg"/>-->
-                            </div>
                             <div class="f-l name" title="LOVO罗莱生活春秋被">******</div>
                         </li>
                         <li class="clearfix win-li">
-                            <div class="f-l avatar">
-                                <!--<img width="34" src="./img/gift/canon.jpg"/>-->
-                            </div>
+
                             <div class="f-l name" title="美的手持无线吸尘器">******</div>
                         </li>
                     </ul>
@@ -74,21 +64,13 @@
                     <h3 class="award-title">三等奖</h3>
                     <ul class="win">
                         <li class="clearfix win-li">
-                            <div class="f-l avatar">
-                                <!--<img width="34" src="./img/gift/jingdong.jpg"/>-->
-                            </div>
                             <div class="f-l name" title="哈根达斯尊礼卡">******</div>
                         </li>
                         <li class="clearfix win-li">
-                            <div class="f-l avatar">
-                                <!--<img width="34" src="./img/gift/yashua.jpg"/>-->
-                            </div>
+
                             <div class="f-l name"  title="阿尔郎电动平衡车">******</div>
                         </li>
                         <li class="clearfix win-li">
-                            <div class="f-l avatar">
-                                <!--<img width="34" src="./img/gift/anmo.jpg"/>-->
-                            </div>
                             <div class="f-l name" title="美的蒸汽挂烫机">******</div>
                         </li>
                     </ul>
@@ -99,8 +81,8 @@
     <img src="./img/lantern.png" alt="" width="85" id="liwu" class="switch">
 </aside>
 <div class="right-btn">
-    <img src="./img/game.png" alt="游戏" style="margin-bottom: 4rem;">
-    <img src="./img/luckyDraw.png" alt="抽奖">
+    <img src="./img/game.png" alt="游戏" style="margin-bottom: 4rem;" class="btn_game">
+    <img src="./img/luckyDraw.png" alt="抽奖"  class="btn_luckyDraw">
 </div>
 <!--倒计时展示-->
 <div class="stop-main" style="line-height: calc(100%);">
@@ -160,7 +142,6 @@
     <% _.each(lottery_datas, function (item) { %>
     <div class="clearfix lottery-list" data-id="" data-namezh="<%= item.namezh %>" data-nameen="<%= item.nameen %>">
         <div class="turqoise lottery-avatar">
-            <!--<%= item.namezh %>-->
             <img src="./img/avatar/<%= item.nameen %>.jpg" alt="<%= item.namezh %>">
         </div>
         <div class="f-l lottery-content">
