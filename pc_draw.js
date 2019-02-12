@@ -913,6 +913,7 @@ function frame(){
         $(".btn_game").click(function () {
 			$("#mingdan-title").html('游戏名单');
         });
+
         $(".btn_luckyDraw").click(function () {
             $("#mingdan-title").html('中奖名单');
         });

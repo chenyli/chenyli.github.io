@@ -29,10 +29,12 @@
     <script>
         // 已签到人数
         var  lottery_registered = JSON.parse(window.localStorage.getItem('lottery_registered'));
+        var num = 0;
+        var singUser = [];
         var numSum = setInterval(function(){
-            var num = 0;
             $.each(lottery_registered,function (i,v) {
-               if(v.wish.length > 0){
+               if(v.wish && singUser.indexOf(v.namezh) == -1){
+                   singUser.push(v.namezh);
                    num++;
                }
             });
@@ -42,7 +44,6 @@
                 clearInterval(numSum);
             }
         },1000);
-
 
 
        function wishIng(){

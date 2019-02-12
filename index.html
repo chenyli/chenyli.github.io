@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>国信华源年会签到</title>
     <style>
-
         html,body{
             height: 100%;
             width: 100%;
@@ -92,14 +91,26 @@
     $(".signImg").click(function () {
        var name = $(".username").val();
         if (name!=null && name!="" && nameReg.test(name)) {
-            var objStr = {
-                "nameen": pinyin.getFullChars(name).toLowerCase(),
-                "namezh": name.trim()
+            var once = 0;
+            lottery_registered.forEach(function (ele) {
+                if(ele.namezh == name.trim()){
+                    once = 1;
+                }
+            });
+
+            if(once){
+                alert("您已完成签到，无需重复签到！");
+            }else{
+                var objStr = {
+                    "nameen": pinyin.getFullChars(name).toLowerCase(),
+                    "namezh": name.trim()
+                }
+                lottery_registered.push(objStr);
+                var data_str = JSON.stringify(lottery_registered);
+                localStorage.setItem('lottery_registered', data_str);
+                alert("恭喜你，签到成功！");
             }
-            lottery_registered.push(objStr);
-            var data_str = JSON.stringify(lottery_registered);
-            localStorage.setItem('lottery_registered', data_str);
-            alert("恭喜你，签到成功！");
+
         }else{
             alert("请输入正确的姓名！");
         }
